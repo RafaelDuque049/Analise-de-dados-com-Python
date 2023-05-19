@@ -20,3 +20,10 @@ print("\nMaior idade:", dados.Idade.max()) # Selecionar a coluna Idade para uso 
 print("Menor idade:", dados['Idade'].min()) # Selecionar a coluna Idade para uso de métodos;
 
 print('\n', dados[['Nome', 'Idade']]) # Selecionar mais de uma coluna para uso;
+print(dados.get(['Nome', 'Idade', 'Email'])) # Mesmo funcionamento do metodo acima, mas utilizando "get()";
+
+dados.update(('Josias', 21, '122.122.122-12', 'josias.046@gmail.com')) # Adiciona mais dados ao DataFrame;
+print('\n', dados)
+
+del dados['CPF'] # Deleta uma tabela;
+print(dados)
